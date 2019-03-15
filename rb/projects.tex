@@ -1,3 +1,24 @@
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
@@ -12,7 +33,7 @@
 %---------------------------------------------------------
   \cventry
     {Asynchronously find usernames across social networks.} % Affiliation/role
-    {\href{https://github.com/rajdeepbharati/poirot}{poirot}} % Organization/group
+    {\href{https://github.com/rajdeepbharati/poirot}{poirot \ExternalLink}} % Organization/group
     {Node.js} % Tech
     {} % Date(s)
     {}
@@ -22,7 +43,7 @@
 \begin{comment}
   \cventry
     {A music streaming and recommendation service.} % Affiliation/role
-    {\href{https://github.com/rajdeepbharati/Melodie}{Melodie}} % Organization/group
+    {\href{https://github.com/rajdeepbharati/Melodie}{Melodie \ExternalLink}} % Organization/group
     {Django, Scikit-learn, pandas} % Tech
     {} % Date(s)
     {}
@@ -30,8 +51,8 @@
 \end{comment}
 %---------------------------------------------------------
   \cventry
-    {A movie recommendation application using 3 different algorithms.} % Affiliation/role
-    {\href{https://mreco.herokuapp.com}{mreco}} % Organization/group
+    {Scraped data from imdb, created a MongoDB collection, and used it to build a movie recommendation web-app using popularity based, user-user collaborative filtering, item-item collaborative filtering, and matrix factorization algorithms. Dockerized the app and deployed to heroku.} % Affiliation/role
+    {\href{https://gitlab.com/rajdeepbharati/reco-engine}{mreco \ExternalLink}} % Organization/group
     {Flask, Scikit-learn, pandas} % Tech
     {} % Date(s)
     {}
@@ -40,7 +61,7 @@
 %---------------------------------------------------------
   \cventry
     {A URL shortening service.} % Affiliation/role
-    {\href{https://github.com/rajdeepbharati/PetiteURL}{PetiteURL}} % Organization/group
+    {\href{https://github.com/rajdeepbharati/PetiteURL}{PetiteURL \ExternalLink}} % Organization/group
     {Node.js, MongoDB} % Tech
     {} % Date(s)
     {}
@@ -49,7 +70,7 @@
 %---------------------------------------------------------
   \cventry
     {A collection of python scripts to automate Facebook.} % Affiliation/role
-    {\href{https://github.com/rajdeepbharati/FB-Automation}{FB Automation}} % Organization/group
+    {\href{https://github.com/rajdeepbharati/FB-Automation}{FB Automation \ExternalLink}} % Organization/group
     {Python, Selenium} % Tech
     {} % Date(s)
     {}
@@ -59,7 +80,7 @@
   \cventry
     {Analysed twitter stream in realtime and calculated top worldwide
 hashtags.} % Affiliation/role
-    {\href{https://github.com/rajdeepbharati/Twitter-Realtime-Analytics}{Twitter Realtime Analytics}} % Organization/group
+    {\href{https://github.com/rajdeepbharati/Twitter-Realtime-Analytics}{Twitter Realtime Analytics \ExternalLink}} % Organization/group
     {Apache Storm} % Tech
     {} % Date(s)
     {}
@@ -68,7 +89,7 @@ hashtags.} % Affiliation/role
 %---------------------------------------------------------
   \cventry
     {Implemented a simple email classifier, using common Machine Learning algorithms (Naive Bayes, KNN, Decision Tree, SVM), studied their accuracy.} % Affiliation/role
-    {\href{https://github.com/rajdeepbharati/Email-Classifier}{Email Classifier}} % Organization/group
+    {\href{https://github.com/rajdeepbharati/Email-Classifier}{Email Classifier \ExternalLink}} % Organization/group
     {Python, Scikit-learn} % Tech
     {} % Date(s)
     {}
@@ -78,7 +99,7 @@ hashtags.} % Affiliation/role
 %---------------------------------------------------------
   \cventry
     {A collection of python scripts to automate Facebook.} % Affiliation/role
-    {\href{https://github.com/rajdeepbharati/FB-Automation}{FB Automation}} % Organization/group
+    {\href{https://github.com/rajdeepbharati/FB-Automation}{FB Automation \ExternalLink}} % Organization/group
     {Python, Selenium} % Tech
     {} % Date(s)
     {}
@@ -88,7 +109,7 @@ hashtags.} % Affiliation/role
 %\begin{comment}
   \cventry
     {A collection of python scripts to automate Facebook.} % Affiliation/role
-    {\href{https://github.com/rajdeepbharati/FB-Automation}{FB Automation}} % Organization/group
+    {\href{https://github.com/rajdeepbharati/FB-Automation}{FB Automation \ExternalLink}} % Organization/group
     {Python, Selenium} % Tech
     {} % Date(s)
     {
